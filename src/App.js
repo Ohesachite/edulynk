@@ -1,33 +1,34 @@
 import React, { Component } from 'react';
 // import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-//import Sidebar from "./components/sidebar.js";
-//import Header from "./components/header.js";
+import Sidebar from "./components/sidebar.js";
+import Header from "./components/header.js";
 import Login from "./login.js";
-import googleButton from './googleButton.js'
+import {Fragment} from 'react';
+import GoogleBtn from './GoogleBtn.js';
+ 
 
 class App extends Component {
   render() {
-    /*return (
+    
+    return(
+      <Fragment> 
       <div>
-        { <Switch>
-         <Route exact path="/" component={Home} />
-        </Switch> }
-        <h1>Hello World!</h1>       
+  {/* //      { <Switch>
+   //      <Route exact path="/" component={Home} />
+   //     </Switch> } */}
+        <h1>Welcome to Edulynk!</h1>
         <Header />
         <Sidebar />
         <footer className="App-footer">
-          <p>Author: John Doe</p>
+          <p>Created at HackThis</p>
         </footer>
       </div>
-
-    );*/
-    return (
-      <div>
-        <h1>Hello World</h1>
-        <Login />
-        <googleButton />
-      </div>
+     // <div>
+    //    <Login />
+          <GoogleBtn />
+    //  </div>
+    </Fragment>
     );
   }
 }

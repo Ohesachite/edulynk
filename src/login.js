@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Label, Input, Fade  } from 'reactstrap';
 //import React from 'react';
 import ReactDOM from 'react-dom';
 //import { GoogleLogin } from 'react-google-login';
+import './components/css/login.css';
 
 const validationMethods =  {
     required : (field, value) => {
@@ -38,7 +39,7 @@ class Login extends Component{
 
     render(){
         return (
-            <div className="Login">
+            <div className="Login" id="login-orientation">
                 <Form id="loginForm" method="post" onSubmit={this.login}>
                     <FormGroup>
                         <Label for="userid">Username</Label>
