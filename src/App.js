@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 // import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import Sidebar from "./components/sidebar.js";
-import Header from "./components/header.js";
-
+//import Sidebar from "./components/sidebar.js";
+//import Header from "./components/header.js";
+import Login from "./login.js";
+import googleButton from './googleButton.js'
 
 class App extends Component {
   render() {
-    return (
+    /*return (
       <div>
-        {/* <Switch>
+        { <Switch>
          <Route exact path="/" component={Home} />
-        </Switch> */}
+        </Switch> }
         <h1>Hello World!</h1>       
         <Header />
         <Sidebar />
@@ -21,6 +21,13 @@ class App extends Component {
         </footer>
       </div>
 
+    );*/
+    return (
+      <div>
+        <h1>Hello World</h1>
+        <Login />
+        <googleButton />
+      </div>
     );
   }
 }
