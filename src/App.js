@@ -6,7 +6,7 @@ import Header from "./components/header.js";
 import Login from "./login.js";
 import {Fragment} from 'react';
 import GoogleBtn from './GoogleBtn.js';
- 
+import ClassSelector from './classSelector'
 
 class App extends Component {
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
    //      <Route exact path="/" component={Home} />
    //     </Switch> } */}
         <h1>Welcome to Edulynk!</h1>
+        <ClassSelector />
         <Header />
         <Sidebar />
         <footer className="App-footer">

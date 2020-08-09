@@ -39,7 +39,7 @@ class Login extends Component{
 
     render(){
         return (
-            <div className="Login" id="login-orientation">
+            <div className="Login" id="login-wrapper" >
                 <Form id="loginForm" method="post" onSubmit={this.login}>
                     <FormGroup>
                         <Label for="userid">Username</Label>

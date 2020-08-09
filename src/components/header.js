@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/sidebar.css';
 
 class Header extends Component {
     render() {
