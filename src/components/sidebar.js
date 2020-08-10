@@ -3,8 +3,6 @@ import "../assets/sidebar.css";
 import { Link, BrowserRouter } from 'react-router-dom';
 import GoogleBtn from "./GoogleBtn.js";
 
-
-
 function Sidebar () {
    return (
       <BrowserRouter>
@@ -35,6 +33,7 @@ function Sidebar () {
                <a
                   href="#"
                   className="text-light list-group-item list-group-item-action bg-info"
+                  onClick={()=>{window.location.href = '/settings';}}
                >Settings
                </a>
                
