@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Label, Input, Fade  } from 'reactstrap';
 //import React from 'react';
 import ReactDOM from 'react-dom';
 //import { GoogleLogin } from 'react-google-login';
-import './components/css/login.css';
+import './assets/login.css';
 
 const validationMethods =  {
     required : (field, value) => {

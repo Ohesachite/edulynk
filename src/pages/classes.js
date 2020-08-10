@@ -5,8 +5,8 @@ class Classes extends Component {
    render() {
       return (
          <Fragment>
-            <div class="container-fluid">
-               <h1 class="mt-4">Classes Page</h1>
+            <div className="container-fluid">
+               <h1 className="mt-4">Classes Page</h1>
                <p>
                   {" "}
                   <ClassSelector></ClassSelector>Classes page:The starting state
