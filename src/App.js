@@ -28,43 +28,41 @@ import { GlobalStyles } from "./assets/global.js";
 import { useState } from "react";
 
 function App() {
-   const [theme, setTheme] = useState("light");
-   const toggleTheme = () => {
-      if (theme === "light") {
-         setTheme("dark");
-      } else {
-         setTheme("light");
-      }
-   };
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
 
-   return (
-      <Fragment>
-         <body>
-            <div class="d-flex" id="wrapper">
-               <Sidebar />
-               <div id="page-content-wrapper">
-                  <Header />
-                  <ThemeProvider
-                     theme={theme === "light" ? lightTheme : darkTheme}
-                  >
-                     <GlobalStyles />
-                     <button onClick={toggleTheme}>Toggle theme</button>
-                  </ThemeProvider>
-                  <Router>
-                     <Switch>
-                        <Route exact path="/" component={Home}></Route>
-                        <Route
-                           exact
-                           path="/classes"
-                           component={Classes}
-                        ></Route>
-                        <Route component={Error}></Route>
-                     </Switch>
-                  </Router>
-               </div>
-            </div>
-         </body>
-      </Fragment>
+  return (
+    <Fragment>
+      <div className="d-flex" id="wrapper">
+        <Sidebar />
+        <div id="page-content-wrapper">
+          <Header />
+          <ThemeProvider
+            theme={theme === "light" ? lightTheme : darkTheme}
+          >
+            <GlobalStyles />
+            <button onClick={toggleTheme}>Toggle theme</button>
+          </ThemeProvider>
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home}></Route>
+              <Route
+                exact
+                path="/classes"
+                component={Classes}
+              ></Route>
+              <Route component={Error}></Route>
+            </Switch>
+          </Router>
+        </div>
+      </div>
+    </Fragment>
    );
 }
 export default App;

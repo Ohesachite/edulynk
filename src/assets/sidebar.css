@@ -6,7 +6,7 @@
    min-height: 100vh;
    margin-left: -15rem;
    -webkit-transition: margin 0.25s ease-out;
-   -moz-transition: margin 0.25s ease-out;
+   -moz-transition: margin 0.25s ease-out; 
    -o-transition: margin 0.25s ease-out;
    transition: margin 0.25s ease-out;
 }
@@ -41,4 +41,8 @@
    #wrapper.toggled #sidebar-wrapper {
       margin-left: -15rem;
    }
+}
+
+a{
+   color: #FFFFFF;  
 }
