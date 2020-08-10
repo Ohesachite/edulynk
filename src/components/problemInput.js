@@ -11,11 +11,9 @@ import React, {Component} from "react";
 class ProblemInput extends Component{
     render(){
         return(
-            <form>
-                <label> </label>
-                <label> </label>
-
-            </form>
+            <div>
+                
+            </div>
         )
     }
 }
