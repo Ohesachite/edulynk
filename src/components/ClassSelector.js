@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
-function ClassSelector(props) {
+function ClassSelector({ changeClass }) {
    const [classes, setClasses] = useState([]);
 
    const getClasses = () => {
@@ -17,17 +17,19 @@ function ClassSelector(props) {
    useEffect(() => {
       getClasses();
    }, []);
-
    return (
       <div>
-         <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
+         <Dropdown> 
+            <Dropdown.Toggle variant="primary" id="dropdown-basic">
                My Classes
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
                {classes.map((cls) => (
-                  <Dropdown.Item>{cls.name}</Dropdown.Item>
+                  <Dropdown.Item 
+                     onClick = {() => changeClass(cls)}> 
+                     {cls.name}
+                  </Dropdown.Item>
                ))}
             </Dropdown.Menu>
          </Dropdown>

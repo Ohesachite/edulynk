@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../assets/sidebar.css";
 import { Link, BrowserRouter } from 'react-router-dom';
+import GoogleBtn from "./GoogleBtn.js";
+
 
 
 function Sidebar () {
@@ -10,42 +12,37 @@ function Sidebar () {
          <div className="bg-info border-right" id="sidebar-wrapper">
             <div className="sidebar-heading">Edulynk </div>
             <div className="list-group list-group-flush"> 
+            <GoogleBtn />
                <a
                   className="text-light list-group-item list-group-item-action bg-info"
                   onClick={()=>{window.location.href = '/';}}
-               >
-                  <Link to="/">Dashboard</Link>
+               >Dashboard
                   
                </a>
 
                <a
                   className="text-light list-group-item list-group-item-action bg-info"
                   onClick={()=>{window.location.href = '/classes';}}
-               >
-                  <Link to="/classes">Classes</Link>   
+               >Classes   
                </a>
 
                <a
+                  href="#"
                   className="text-light list-group-item list-group-item-action bg-info"
-               >
-                  Students
+                  onClick={()=>{window.location.href = '/profile';}}
+               >Profile
                </a>
                <a
                   href="#"
                   className="text-light list-group-item list-group-item-action bg-info"
-               >
-                  Profile
+               >Settings
                </a>
-               <a
-                  href="#"
-                  className="text-light list-group-item list-group-item-action bg-info"
-               >
-                  Settings
-               </a>
+               
             </div>
          </div>
       </div>
       </BrowserRouter>
+      
    );
 }
 export default Sidebar;
