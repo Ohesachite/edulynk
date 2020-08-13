@@ -1,5 +1,5 @@
 const knex = require("db");
-
+ 
 exports.register = async (req, res) => {
     knex
         .insert({

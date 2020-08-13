@@ -1,4 +1,4 @@
-// Import path module
+// Import path module 
 const path = require('path')
 
 // Get the location of database.sqlite file

@@ -1,6 +1,6 @@
 const express = require('express');
 const controller = require('db-router.js');
-
+  
 const router = express.Router();
 
 router.post('/register', controller.register);
