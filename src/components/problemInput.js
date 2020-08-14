@@ -11,9 +11,17 @@ import React, {Component} from "react";
 class ProblemInput extends Component{
     render(){
         return(
-            <div>
+            <form>
+                <label htmlFor="problem">Type in the problem here: </label>
+                <input type="text" name="problem" id="problem"/>
+                <label htmlFor="answer">Set your answer for Autograding </label>
+                <input type="text" name="answer" id="answer"/>
+                <label htmlFor="point-value">Assign a Point Value </label>
+                <input type="number" name="point-value" id="point-value"/>
+                <button> Add Problem </button>
+                <input type="submit" value="Submit" />
                 
-            </div>
+            </form>
         )
     }
-}
+} export default ProblemInput

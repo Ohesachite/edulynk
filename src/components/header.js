@@ -8,11 +8,11 @@ class Header extends Component {
          <Fragment>
             <div className="d-flex" id="wrapper">
                <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                  <button className="btn btn-primary" id="menu-toggle">
+                  {/* <button className="btn btn-primary" id="menu-toggle">
                      Toggle Menu
-                  </button>
+                  </button> */}
 
-                  <button
+                  {/* <button
                      className="navbar-toggler"
                      type="button"
                      data-toggle="collapse"
@@ -22,14 +22,14 @@ class Header extends Component {
                      aria-label="Toggle navigation"
                   >
                      <span className="navbar-toggler-icon"></span>
-                  </button>
+                  </button> */}
 
                   <div
                      className="collapse navbar-collapse"
                      id="navbarSupportedContent"
                   >
                      <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li className="nav-item active">
+                        {/* <li className="nav-item active">
                            <a className="nav-link" href="#">
                               Home <span className="sr-only">(current)</span>
                            </a>
@@ -38,8 +38,8 @@ class Header extends Component {
                            <a className="nav-link" href="#">
                               Link
                            </a>
-                        </li>
-                        <li className="nav-item dropdown">
+                        </li> */}
+                        {/* <li className="nav-item dropdown">
                            <a
                               className="nav-link dropdown-toggle"
                               href="#"
@@ -66,8 +66,8 @@ class Header extends Component {
                                  Something else here
                               </a>
                            </div>
-                        </li>
-                        <GoogleBtn />
+                        </li> */}
+                        {/* <GoogleBtn /> */}
                      </ul>
                   </div>
                </nav>

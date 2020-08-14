@@ -1,26 +1,26 @@
-import React, { Component, Fragment } from "react";
+ import React, { Component, Fragment } from "react";
 import ClassSelector from "../components/ClassSelector.js";
+import ProblemInput from "../components/problemInput.js";
+import CreateProblem from "../components/createProblem.js";
+
 
 class Classes extends Component {
+   state = {
+      currClass: "No Class Selected"
+   };
+
+   changeClass = (cls) => {
+      this.setState({ currClass: cls.name})
+   };
+   
    render() {
       return (
          <Fragment>
             <div className="container-fluid">
-               <h1 className="mt-4">Classes Page</h1>
-               <p>
-                  {" "}
-                  <ClassSelector></ClassSelector>Classes page:The starting state
-                  of the menu will appear collapsed on smaller screens, and will
-                  appear non-collapsed on larger screens. When toggled using the
-                  button below, the menu will change.
-               </p>
-               <p>
-                  Make sure to keep all page content within the{" "}
-                  <code>#page-content-wrapper</code>. The top navbar is
-                  optional, and just for demonstration. Just create an element
-                  with the <code>#menu-toggle</code> ID which will toggle the
-                  menu when clicked.
-               </p>
+               <h1 className="mt-4"><ClassSelector changeClass = {this.changeClass} /></h1>
+               <h2> {this.state.currClass} </h2> 
+               <p><CreateProblem /></p>
+               <p><ProblemInput /></p>
             </div>
          </Fragment>
       );

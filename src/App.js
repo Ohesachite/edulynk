@@ -14,12 +14,15 @@ import { Fragment } from "react";
 //navigation+items
 import Header from "./components/header.js";
 import Sidebar from "./components/sidebar.js";
-import Login from "./components/login.js";
 
 //pages
 import Classes from "./pages/classes.js";
 import Home from "./pages/home.js";
 import Error from "./pages/error.js";
+import Profile from "./pages/profile.js";
+import Settings from "./pages/settings.js";
+import Login from "./components/login.js";
+import Registration from "./components/registration.js";
 
 //theme+color
 import { ThemeProvider } from "styled-components";
@@ -52,11 +55,11 @@ function App() {
           <Router>
             <Switch>
               <Route exact path="/" component={Home}></Route>
-              <Route
-                exact
-                path="/classes"
-                component={Classes}
-              ></Route>
+              <Route exact path="/classes" component={Classes}></Route>
+              <Route exact path="/profile" component={Profile}></Route>
+              <Route exact path="/settings" component={Settings}></Route>
+              <Route exact path="/login" component={Login}></Route>
+              <Route exact path="/register" component={Registration}></Route>
               <Route component={Error}></Route>
             </Switch>
           </Router>
